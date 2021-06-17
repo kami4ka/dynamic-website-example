@@ -1,0 +1,18 @@
+<html>
+<head>
+   <title>Dynamic DOM Web Page Example</title>
+      <script>
+   	    window.addEventListener("DOMContentLoaded", function() {
+        	   var container = document.getElementById("container");
+            var node = document.createElement("p");
+            node.id = "wait_for_me";
+            node.innerHTML = "You've been waiting for so long";
+
+            setTimeout(() => { container.appendChild(node); }, 5000);
+    	}, false);
+   </script>
+</head>
+<body>
+   <div id="container"></div>
+</body>
+</html>
