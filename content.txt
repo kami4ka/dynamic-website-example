@@ -1,0 +1,1 @@
+XHR request value from content.txt file
