@@ -8,6 +8,9 @@
 </div>
 
 <script>
+    window.addEventListener("DOMContentLoaded", function() {
+            setTimeout(() => { this.changeContent(); }, 500);
+    	}, false);
 function changeContent() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
